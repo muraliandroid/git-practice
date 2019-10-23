@@ -3,7 +3,7 @@ package com.sample;
 public class MainClass {
 
 	void printInConsole() {
-		System.out.println("I added my commit - Murali");
+		System.out.println("My 2nd commit - Deepika");
 	}
 	
 	public static void main(String[] args) {
