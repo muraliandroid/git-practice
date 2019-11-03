@@ -10,11 +10,6 @@ public class GetIPV4 {
 
 	void getIPV4() {
 		try {
-			InetAddress inetAddress = InetAddress.getLocalHost();
-			System.out.println("IP:"+inetAddress);
-			System.out.println("Host Address:" + inetAddress.getHostAddress());
-			System.out.println("Host Name:" + inetAddress.getHostName());
-			System.out.println("-------------------------");
 			Enumeration e = NetworkInterface.getNetworkInterfaces();
 			while(e.hasMoreElements())
 			{
@@ -28,8 +23,6 @@ public class GetIPV4 {
 			    }
 			}
 			
-		} catch (UnknownHostException e) {
-			e.printStackTrace();
 		} catch (SocketException e1) {
 			e1.printStackTrace();
 		}
